@@ -1,0 +1,51 @@
+.lstand-design {
+
+  position: relative;
+
+  width: 99mm;
+  /* Half the width of the page minus gap */
+  height: 70mm;
+  border: 1px dotted #999999;
+
+  /* Border only on the right side */
+
+  /* border-bottom: 0.5px dotted #999999;/* /* Border only on the bottom side */
+}
+
+.lstand-qr-code-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Use "contain" to maintain aspect ratio and fit within the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lstand-qr-code-img svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.lstand-page {
+  width: 210mm;
+  height: 296mm;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 99mm);
+  grid-template-rows: repeat(4, 69mm);
+
+  page-break-after: always;
+
+  padding: 5mm;
+  gap: 1px;
+  margin: auto;
+}
+
+
+
+
+
